@@ -4,7 +4,7 @@
 #
 Name     : R-date
 Version  : 1.2.39
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/date_1.2-39.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/date_1.2-39.tar.gz
 Summary  : Functions for Handling Dates
@@ -26,21 +26,22 @@ lib components for the R-date package.
 
 %prep
 %setup -q -c -n date
+cd %{_builddir}/date
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580950933
+export SOURCE_DATE_EPOCH=1589529815
 
 %install
-export SOURCE_DATE_EPOCH=1580950933
+export SOURCE_DATE_EPOCH=1589529815
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
