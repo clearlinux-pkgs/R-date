@@ -4,7 +4,7 @@
 #
 Name     : R-date
 Version  : 1.2.39
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/date_1.2-39.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/date_1.2-39.tar.gz
 Summary  : Functions for Handling Dates
@@ -33,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589529815
+export SOURCE_DATE_EPOCH=1620763742
 
 %install
-export SOURCE_DATE_EPOCH=1589529815
+export SOURCE_DATE_EPOCH=1620763742
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -101,3 +101,4 @@ R CMD check --no-manual --no-examples --no-codoc date || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/date/libs/date.so
+/usr/lib64/R/library/date/libs/date.so.avx512
