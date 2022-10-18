@@ -1,3 +1,9 @@
+2022-10-07  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
+
+	* DESCRIPTION: New version is 1.2-40.
+
+	* src/char_date.c: Add missing prototypes.
+
 2020-02-05  Kurt Hornik  <Kurt.Hornik@wu.ac.at>
 
 	* DESCRIPTION: New version is 1.2-39.
