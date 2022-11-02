@@ -4,7 +4,7 @@
 #
 Name     : R-date
 Version  : 1.2.40
-Release  : 38
+Release  : 39
 URL      : https://cran.r-project.org/src/contrib/date_1.2-40.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/date_1.2-40.tar.gz
 Summary  : Functions for Handling Dates
