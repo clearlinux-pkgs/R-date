@@ -4,7 +4,7 @@
 #
 Name     : R-date
 Version  : 1.2.42
-Release  : 41
+Release  : 42
 URL      : https://cran.r-project.org/src/contrib/date_1.2-42.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/date_1.2-42.tar.gz
 Summary  : Functions for Handling Dates
@@ -12,9 +12,6 @@ Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-date-lib = %{version}-%{release}
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 No detailed description available
@@ -36,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1675184377
+export SOURCE_DATE_EPOCH=1678814439
 
 %install
-export SOURCE_DATE_EPOCH=1675184377
+export SOURCE_DATE_EPOCH=1678814439
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
